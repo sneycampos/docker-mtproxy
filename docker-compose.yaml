@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+  mtproxy:
+    image: mtproxy/mtproxy
+    restart: always
+    ports:
+      - 443:443
+    volumes:
+      - ./data/mtproxy:/data/
